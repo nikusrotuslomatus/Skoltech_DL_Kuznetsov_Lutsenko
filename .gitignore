@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+.env
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+*.log
+*.tmp
+*.bak
+
+# LaTeX build artifacts.
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+
+# Local raw archives and transfer bundles.
+*.rar
+*.zip
+*.tar
+*.tar.gz
+server_training_payload*/
+
+# Keep final reports, metrics, plots, and model checkpoints in the submission
+# unless the course platform has a strict size limit.

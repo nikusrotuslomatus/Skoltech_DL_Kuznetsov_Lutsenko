@@ -1,0 +1,58 @@
+{
+  "model_name": "efficientnet_b0",
+  "best_epoch": 2,
+  "threshold": 0.405,
+  "validation": {
+    "threshold": 0.405,
+    "accuracy": 0.8608058608058609,
+    "valid_precision": 0.8299319727891157,
+    "valid_recall": 0.9037037037037037,
+    "valid_f1": 0.8652482269503546,
+    "macro_precision": 0.8633786848072562,
+    "macro_recall": 0.8612721417069242,
+    "macro_f1": 0.8606544165054804,
+    "confusion_matrix": [
+      [
+        113,
+        25
+      ],
+      [
+        13,
+        122
+      ]
+    ],
+    "tn": 113,
+    "fp": 25,
+    "fn": 13,
+    "tp": 122,
+    "roc_auc": 0.9304884594739666,
+    "pr_auc": 0.9348225662782661
+  },
+  "test": {
+    "threshold": 0.405,
+    "accuracy": 0.8646616541353384,
+    "valid_precision": 0.8356164383561644,
+    "valid_recall": 0.9104477611940298,
+    "valid_f1": 0.8714285714285714,
+    "macro_precision": 0.8678082191780823,
+    "macro_recall": 0.864314789687924,
+    "macro_f1": 0.8642857142857143,
+    "confusion_matrix": [
+      [
+        108,
+        24
+      ],
+      [
+        12,
+        122
+      ]
+    ],
+    "tn": 108,
+    "fp": 24,
+    "fn": 12,
+    "tp": 122,
+    "roc_auc": 0.950361827227499,
+    "pr_auc": 0.9510675942009058
+  },
+  "device": "cuda"
+}

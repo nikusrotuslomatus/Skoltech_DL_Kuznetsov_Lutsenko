@@ -1,0 +1,16 @@
+{
+  "rows": 1767,
+  "label_counts": {
+    "0": 883,
+    "1": 884
+  },
+  "missing_files": 0,
+  "corrupt_images": 0,
+  "tiny_crops": 123,
+  "huge_crops": 30,
+  "unique_source_images": 586,
+  "duplicate_files_total": 0,
+  "duplicate_label_conflict_groups": 0,
+  "path_label_mismatches": 0,
+  "ok": true
+}

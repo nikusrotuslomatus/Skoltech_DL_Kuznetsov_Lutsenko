@@ -1,0 +1,17 @@
+vehicle_type,label_name,samples
+2_wheeler,invalid_candidate,358
+2_wheeler,valid_wheel_candidate,315
+3_wheeler,invalid_candidate,330
+3_wheeler,valid_wheel_candidate,314
+4_wheeler,invalid_candidate,123
+4_wheeler,valid_wheel_candidate,132
+6_wheeler,invalid_candidate,25
+6_wheeler,valid_wheel_candidate,92
+8_wheeler,invalid_candidate,8
+8_wheeler,valid_wheel_candidate,8
+motorcycle,invalid_candidate,16
+motorcycle,valid_wheel_candidate,5
+truck,invalid_candidate,2
+truck,valid_wheel_candidate,3
+unknown,invalid_candidate,21
+unknown,valid_wheel_candidate,15

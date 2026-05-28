@@ -1,0 +1,4 @@
+split,samples,valid,source_images,tiny,huge,invalid,valid_share
+test,266,134,88,23,7,132,0.5037593984962406
+train,1228,615,410,87,19,613,0.500814332247557
+validation,273,135,88,13,4,138,0.4945054945054945

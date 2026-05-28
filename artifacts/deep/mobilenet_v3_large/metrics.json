@@ -1,0 +1,58 @@
+{
+  "model_name": "mobilenet_v3_large",
+  "best_epoch": 2,
+  "threshold": 0.46,
+  "validation": {
+    "threshold": 0.46,
+    "accuracy": 0.8644688644688645,
+    "valid_precision": 0.8356164383561644,
+    "valid_recall": 0.9037037037037037,
+    "valid_f1": 0.8683274021352313,
+    "macro_precision": 0.8666271168158775,
+    "macro_recall": 0.8648953301127213,
+    "macro_f1": 0.8643523803128987,
+    "confusion_matrix": [
+      [
+        114,
+        24
+      ],
+      [
+        13,
+        122
+      ]
+    ],
+    "tn": 114,
+    "fp": 24,
+    "fn": 13,
+    "tp": 122,
+    "roc_auc": 0.94170692431562,
+    "pr_auc": 0.9485053098051253
+  },
+  "test": {
+    "threshold": 0.46,
+    "accuracy": 0.868421052631579,
+    "valid_precision": 0.8278145695364238,
+    "valid_recall": 0.9328358208955224,
+    "valid_f1": 0.8771929824561403,
+    "macro_precision": 0.8747768499856032,
+    "macro_recall": 0.8679330619629126,
+    "macro_f1": 0.8677462887989204,
+    "confusion_matrix": [
+      [
+        106,
+        26
+      ],
+      [
+        9,
+        125
+      ]
+    ],
+    "tn": 106,
+    "fp": 26,
+    "fn": 9,
+    "tp": 125,
+    "roc_auc": 0.9471958389868838,
+    "pr_auc": 0.9484052274961566
+  },
+  "device": "cuda"
+}

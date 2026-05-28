@@ -1,0 +1,77 @@
+project:
+  name: wheel_candidate_filtering
+  seed: 42
+
+data:
+  datasets:
+    - name: labeled_crops_70
+      root: ../labeled_crops_70
+    - name: labeled_crops
+      root: ../labeled_crops/labeled_crops
+
+  output_dir: data/processed
+  manifest_name: manifest.csv
+  split_manifest_name: manifest_splits.csv
+  split_summary_name: split_summary.csv
+
+  class_names:
+    0: invalid_candidate
+    1: valid_wheel_candidate
+
+  group_col: source_relative_path
+  split:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+    search_iterations: 700
+
+  quality:
+    warn_min_side_px: 32
+    warn_max_side_px: 1800
+    keep_flagged_samples: true
+
+preprocessing:
+  image_mode: RGB
+  input_size: 224
+  square_pad: true
+  pad_fill: 0
+  imagenet_mean: [0.485, 0.456, 0.406]
+  imagenet_std: [0.229, 0.224, 0.225]
+
+training:
+  model_name: mobilenet_v3_large
+  pretrained: true
+  batch_size: 32
+  num_workers: 0
+  epochs: 12
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  optimizer: AdamW
+  scheduler: cosine
+  class_weighting: balanced
+  early_stopping_patience: 4
+  mixed_precision: true
+  threshold_target_recall: 0.90
+
+models:
+  mobilenet_v3_large:
+    batch_size: 32
+    learning_rate: 0.0001
+    epochs: 12
+  efficientnet_b0:
+    batch_size: 32
+    learning_rate: 0.0001
+    epochs: 12
+  efficientnet_v2_s:
+    batch_size: 16
+    learning_rate: 0.0001
+    epochs: 12
+  convnext_tiny:
+    batch_size: 16
+    learning_rate: 0.00005
+    epochs: 12
+
+outputs:
+  artifacts_dir: artifacts
+  reports_dir: reports
+

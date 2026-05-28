@@ -1,0 +1,7 @@
+quality_flags,label_name,samples
+,invalid_candidate,764
+,valid_wheel_candidate,850
+huge_crop,invalid_candidate,7
+huge_crop,valid_wheel_candidate,23
+tiny_crop,invalid_candidate,112
+tiny_crop,valid_wheel_candidate,11

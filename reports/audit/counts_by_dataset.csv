@@ -1,0 +1,5 @@
+dataset_name,label_name,samples
+labeled_crops,invalid_candidate,368
+labeled_crops,valid_wheel_candidate,222
+labeled_crops_70,invalid_candidate,515
+labeled_crops_70,valid_wheel_candidate,662
