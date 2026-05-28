@@ -34,13 +34,6 @@ artifacts/deep/efficientnet_b0/best.pt       15.57 MB
 
 ## Dataset
 
-The project uses two cleaned crop exports:
-
-```text
-../labeled_crops_70
-../labeled_crops/labeled_crops
-```
-
 Expected layout:
 
 ```text
@@ -87,7 +80,6 @@ scripts/08_benchmark_latency.py      optional latency benchmark
 scripts/run_all.py                   end-to-end runner
 artifacts/                           trained models, metrics, predictions
 reports/                             figures and audit summaries
-REPORT.md                            submission report
 ```
 
 ## Setup
